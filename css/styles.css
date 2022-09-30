@@ -1,0 +1,207 @@
+:root {
+    --clr-title: #ff4c68;
+    --clr-primary: #ef8172;
+    --clr-secondary: #fff;
+    --clr-accent-400: #000;
+    --clr-accent-100: #8f8f8f;
+    
+    --ff-montserrat: "Montserrat", sans-serif;
+    --ff-ubuntu: "Ubuntu", sans-serif;
+    
+    --size-400:1.5rem;
+    --size-700: 3rem;
+    
+    --fs-700: var(--size-700);
+    --fs-400: var(--size-400);
+    
+    --container-padding: 5% 10%;
+}
+
+
+body {
+    font-family: var(--ff-ubuntu);
+    text-align:center;
+}
+
+h3 {
+    font-size: var(--fs-400);
+}
+
+h1,h2,h3{
+    font-family: var(--ff-montserrat);
+}
+
+
+
+/* Contant Util Classes */
+
+.font-montserrat {
+    font-family: var(--ff-montserrat);
+}
+
+.font-ubuntu {
+    font-family: var(--ff-ubuntu);
+}
+
+.container-lg {
+    padding: var(--container-padding);
+}
+.white-section{
+    background-color:var(--clr-secondary)
+}
+
+/* Title Section */
+
+.colored-section#title {
+    background-color: var(--clr-title);
+}
+
+
+
+#title .container-lg {
+    padding: 3% 10% 3%;
+}
+
+/* -> Navigation Bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+.navbar-brand {
+    font-weight: 500;
+}
+.nav-item {
+    padding-inline: var(--size-400);
+}
+/* ->  Download Buttons */
+.big-heading-wrapper{
+    text-align:left;
+}
+.big-heading {
+    font-size: var(--fs-700);
+    font-weight: 900;
+    line-height: 1.5;
+}
+.download-btn {
+    margin: 2rem 1rem 0 0;
+}
+.hero-image-wrapper {
+    position: relative;
+}
+.hero-image {
+    width: 45%;
+    rotate: 25deg;
+    position: absolute;
+}
+
+@media (width<=992px) {
+    #title, .big-heading-wrapper {
+        text-align: center;
+    }
+    
+}
+@media (width <= 1200px) {
+    .hero-image {
+        width: 50%;
+        position: static;
+        margin: 10% 0;
+        rotate: 0deg;
+    }
+}
+
+/* Feature Section */
+
+.colored-section#features{
+    background-color: var(--clr-secondary);
+}
+
+#features {
+    position: relative;
+}
+
+.feature-box {
+    padding-inline: 5%;
+    padding-block: var(--size-700);
+}
+.feature-icons {
+    color: var(--clr-primary);
+    font-size: var(--fs-700);
+    margin-bottom: 1rem;
+}
+.feature-icons:hover {
+    color: var(--clr-title);
+}
+.feature-title {
+    font-size: var(--fs-400);
+    font-family: var(--ff-montserrat);
+    font-weight: bold;
+}
+.feature-text {
+    font-family: var(--ff-montserrat);
+
+    color: var(--clr-accent-100);
+}
+
+/* Testimonials */
+
+.colored-section#testimonials{
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary);
+}
+
+.testimonial-text {
+    font-family: var(--ff-montserrat);
+    font-size: var(--fs-700);
+    line-height: 1.5;
+    font-weight: bold;
+}
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+/* Press */
+.colored-section#press {
+    background-color: var(--clr-primary);
+}
+#press > .container-lg {
+    padding-top: 0;
+}
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 0;
+}
+
+/* Pricing */
+
+.pricing-column {
+    padding: 5% 0;
+}
+.dog-breed-title{
+    font-size: var(--fs-400);
+    font-weight: bold;
+}
+.price-text{
+    font-size: var(--fs-700);
+    font-weight: bold;
+}
+#pricing p {
+    color: var(--clr-accent-100);
+    font-family: var(--ff-montserrat);
+    font-weight: bold;
+}
+
+/* CTA */
+.colored-section#cta{
+    background-color: #ff4c68;
+}
+.cta-heading{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+/* Contact */
+.contact-icons{
+    text-decoration: none;
+    color: black;
+}
